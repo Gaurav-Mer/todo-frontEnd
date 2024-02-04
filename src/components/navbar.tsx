@@ -13,7 +13,7 @@ const Navbar: React.FC<OverAllSt> = ({ userData }) => {
       const resp = await fetch(url, {
         method: "GET",
         headers: {
-          "Context-type": "application/json",
+          "Context-Type": "application/json",
         },
         credentials: "include",
       });
@@ -42,7 +42,7 @@ const Navbar: React.FC<OverAllSt> = ({ userData }) => {
               onClick={() =>
                 setEditProfile((prev) => ({ ...prev, open: true }))
               }
-              src={`${import.meta.env.VITE_BACKEND_URL}/avatar/${userData?.avatar?.data}`} // Replace with your server and avatar folder
+              src={`http://localhost:3001/avatar/${userData?.avatar?.data}`} // Replace with your server and avatar folder
               className="rounded-2"
               style={{ width: 40, height: 40 }}
               alt="Avatar"

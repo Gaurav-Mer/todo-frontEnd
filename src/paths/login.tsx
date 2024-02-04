@@ -146,9 +146,8 @@ export default function Login() {
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="abc@gmail.com"
-                  className={`form-control ${
-                    errorData?.email ? "is-invalid " : ""
-                  }`}
+                  className={`form-control ${errorData?.email ? "is-invalid " : ""
+                    }`}
                 />
               </div>
               {errorData?.email ? (
@@ -181,9 +180,8 @@ export default function Login() {
                   placeholder="**********"
                   onChange={handleChange}
                   name="password"
-                  className={`form-control ${
-                    errorData?.password ? "is-invalid " : ""
-                  }`}
+                  className={`form-control ${errorData?.password ? "is-invalid " : ""
+                    }`}
                 />
                 <div className="input-group-text">
                   {!showPassword?.password ? (
