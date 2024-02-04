@@ -76,9 +76,9 @@ const HomeLayout: React.FC<Props> = ({ Ptype, userData }) => {
     setModalShow(prev => !prev)
   };
 
-  const openDialogDesktop = () => {
-    setModalShow(prev => !prev)
-  }
+  // const openDialogDesktop = () => {
+  //   setModalShow(prev => !prev)
+  // }
 
   useEffect(() => {
     const controller = new AbortController();
