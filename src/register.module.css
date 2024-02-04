@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.main {
+  background: #e2e7ff;
+  background: linear-gradient(0deg, #e2e7ff, #ffffff);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.bg {
+  background: #e2e7ff;
+  background: linear-gradient(0deg, #ccd3f9, #fdfafa);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: green;
+  }
+}
+
+.nested > li {
+  list-style-type: none;
+  margin-top: 14px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.nested > li:hover {
+  color: #0d6efd;
+}
+
+.name :hover {
+  color: #0d6efd;
+}
