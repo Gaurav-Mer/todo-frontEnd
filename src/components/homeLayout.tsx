@@ -75,6 +75,7 @@ const HomeLayout: React.FC<Props> = ({ Ptype, userData }) => {
   const toggleModal = () => {
     setModalShow(prev => !prev)
   };
+  
 
   // const openDialogDesktop = () => {
   //   setModalShow(prev => !prev)

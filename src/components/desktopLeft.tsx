@@ -33,8 +33,8 @@ const DesktopLeft: React.FC<StateProps> = ({
   };
 
   const handleClick = () => {
-    if (pageType && pageType !== "DesktopView" && callBackFunc) {
-      callBackFunc();
+    if (pageType && callBackFunc) {
+      callBackFunc("openDialog");
     }
   };
 
