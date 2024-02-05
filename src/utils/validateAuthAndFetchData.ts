@@ -8,8 +8,10 @@ const validateAuthAndFetchData = (initalData = {}) => {
     const dispatch = useDispatch();
 
     const validateAuthAndFetchData = async () => {
+        const url = `${import.meta.env.VITE_BACKEND_URL}/api/setAuth`;
+
         try {
-            const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/setAuth`, {
+            const response = await fetch(url, {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json",
@@ -33,7 +35,7 @@ const validateAuthAndFetchData = (initalData = {}) => {
                             }
                         }
                     }
-                }   
+                }
                 setLoading(false);
                 dispatch(setUserData({ tokenData: jsonData?.rData }));
             } else {

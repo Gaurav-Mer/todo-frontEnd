@@ -42,7 +42,7 @@ const Navbar: React.FC<OverAllSt> = ({ userData }) => {
               onClick={() =>
                 setEditProfile((prev) => ({ ...prev, open: true }))
               }
-              src={`http://localhost:3001/avatar/${userData?.avatar?.data}`} // Replace with your server and avatar folder
+              src={`${import.meta.env.VITE_BACKEND_URL}/avatar/${userData?.avatar?.data}`} // Replace with your server and avatar folder
               className="rounded-2"
               style={{ width: 40, height: 40 }}
               alt="Avatar"
