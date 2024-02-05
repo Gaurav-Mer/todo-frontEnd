@@ -18,9 +18,11 @@ const MobileSideBar: React.FC<Props> = ({
   toggleModal
 }) => {
 
-  const handleCallBack = () => {
-    toggleModal()
-    setVisible(false)
+  const handleCallBack = (data = "") => {
+    if (data === "openDialog") {
+      toggleModal()
+    }
+    setVisible(false);
   }
   return (
     <>
