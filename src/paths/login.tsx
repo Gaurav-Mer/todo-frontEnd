@@ -57,7 +57,7 @@ export default function Login() {
   const sendDataToBackEnd = async () => {
     const dataToBeSend = JSON.parse(JSON.stringify(formData));
     try {
-      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/login`, {
+      const response = await fetch(`http:localhost:3001/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
